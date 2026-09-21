@@ -11,7 +11,7 @@ export default function Home() {
             {projects.map((project) => (
                 <div key={project.id}>
                     <Link className="font-outfit text-outfit" to={`/projects/${project.slug}`}>
-                        <p>project name</p>
+                        <p>{project.name}</p>
                     </Link>
                 </div>
             ))}

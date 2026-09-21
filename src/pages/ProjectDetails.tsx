@@ -2,83 +2,7 @@ import { useParams } from "react-router-dom";
 import {projects} from "../../lib/data"
 
 
-const liveProjeects = [
-    {
-        id: 1,
-        title: "Landing page concept",
-        link: "https://www.zenfipay.com"
-    },
-    {
-        id: 2,
-        title: "Merchant PWA",
-        link: "https://www.merchant.zenfipay.com"
-    },
-    {
-        id: 3,
-        title: "Landing page",
-        link: "https://www.zenfipay.com"
-    },
-]
-
-const tools = [
-    {
-        id: 1,
-        name: "TypeScript"
-    },
-    {
-        id: 2,
-        name: "TailwindCSS"
-    },
-    {
-        id: 3,
-        name: "ShadCn"
-    },
-    {
-        id: 4,
-        name: "ReactBits"
-    },
-    {
-        id: 5,
-        name: "React"
-    },
-    {
-        id: 6,
-        name: "NextJS"
-    },
-    {
-        id: 7,
-        name: "Framer Motion"
-    },
-    {
-        id: 8,
-        name: "GSAP"
-    },
-    {
-        id: 9,
-        name: "NextAuth"
-    },
-    {
-        id: 10,
-        name: "React-Redux"
-    },
-]
-
-const reviews = [
-    {
-        id:1,
-        name: "Adeyera Emmanuel",
-        role: "Product Design Lead",
-        review: "This is supposed to a comment, or review made by said person that attests to my character and work ethic. Short and concise."
-    },
-    {
-        id:2,
-        name: "Suleiman David",
-        role: "CEO & Co-founder",
-        review: "He's such a pookie pie innit!"
-    },
-]
-
-function ProjectDetails() {
+export default function ProjectDetails() {
 
     const { slug } = useParams();
 
@@ -103,12 +27,12 @@ function ProjectDetails() {
                     <h4 className="text-[64px] text-[#111111]">
                         {project.name}
                     </h4>
-                    <p>Logo</p>
+                    <p>{project.logo}</p>
                 </div>
 
                 {/* ABOUT COMPANY */}
                 <p className=" tracking-normal">
-                    Zenfipay is a fintech company focused on simplifying cross-border and local payments through stablecoin-powered financial infrastructure. The platform enables businesses and individuals to send, receive, and manage payments securely across different regions, leveraging blockchain technology to provide faster settlements, reduced transaction costs, and improved accessibility. By bridging traditional finance and digital assets, Zenfipay helps merchants streamline payment operations while offering reliable and efficient financial services in emerging and global markets.
+                    {project.description}
                 </p>
 
 
@@ -124,7 +48,7 @@ function ProjectDetails() {
 
                 {/* PROJECTS */}
                 <div className="flex flex-col gap-2">
-                    {liveProjeects.map((project) => (
+                    {project.liveWorks.map((project) => (
                         <a key={project.id} href={project.link} target="_blank" rel="noopener noreferrer" className="text-[18px]">
                             {project.id}. {project.title}
                         </a>
@@ -142,7 +66,7 @@ function ProjectDetails() {
 
                 {/* LIST */}
                 <ul className="flex flex-wrap gap-4.5">
-                    {tools.map((tool) => (
+                    {project.tools.map((tool) => (
                         <li key={tool.id} className=" text-[18px] hover:text-[#111111] transition-colors duration-75 ease-linear cursor-default">
                             {tool.name}
                         </li>
@@ -160,7 +84,7 @@ function ProjectDetails() {
 
                 {/* CONTENT */}
                 <p className="py-4">
-
+                    {project.devExperience}
                 </p>
             </section>
 
@@ -175,7 +99,7 @@ function ProjectDetails() {
                 {/* CONTENT */}
                 <div className="space-y-5 py-4">
 
-                    {reviews.map((review) => (
+                    {project.reviews.map((review) => (
                         <div key={review.id} className="flex flex-col gap-1">
 
                             {/* NAME AND ROLE */}
@@ -195,5 +119,3 @@ function ProjectDetails() {
         </main>
     )
 }
-
-export default ProjectDetails;
