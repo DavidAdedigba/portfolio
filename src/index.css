@@ -63,10 +63,10 @@ h1,h2,h3,h4,h5 {
 h1,h2 {
   line-height: 44px;
   color: var(--text-h);
-  font-size: 35px;
+  font-size: 32px;
 
   @media(min-width: 750px) {
-    font-size: 40px;
+    font-size: 90px;
     line-height: 90px;
   }
 }
@@ -74,7 +74,7 @@ h3 {
   font-family: var(--accent-t);
   font-weight: 500;
   color: var(--text-h);
-  font-size:44px;
+  font-size:155px;
 
   @media (min-width: 750px) {
     font-size: 100px;
@@ -88,11 +88,13 @@ h4 {
 }
 a {
   font-family: "outfit", serif;
+  font-weight: 400;
 }
 
 p {
   font-family: "outfit", serif;
   line-height: normal;
+  font-weight: 400;
 }
 
 ::selection {
