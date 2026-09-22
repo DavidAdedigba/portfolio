@@ -43,10 +43,10 @@ html,body {
 section, .section {
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  padding: 10px 12px;
 
   @media ( min-width:1114px ) {
-    padding: 85px;
+    padding: 0 85px;
   }
 }
 .section {
@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5 {
 h1,h2 {
   line-height: 44px;
   color: var(--text-h);
-  font-size: 40px;
+  font-size: 35px;
 
   @media(min-width: 750px) {
     font-size: 40px;
