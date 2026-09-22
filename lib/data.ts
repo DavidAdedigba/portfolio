@@ -114,7 +114,7 @@ export const projects = [
             {
                 id:1,
                 name: "Adeyera Emmanuel",
-                role: "Product Design Lead",
+                role: "Product & Design",
                 review: "This is supposed to a comment, or review made by said person that attests to my character and work ethic. Short and concise."
             },
             {
