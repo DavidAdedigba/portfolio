@@ -3,7 +3,8 @@ export const projects = [
         id: 1,
         slug:"zenfipay",
         name: "Zenfipay",
-        logo: "logo",
+        logoLight: "/icons/zenfipay-light.svg",
+        logoDark: "/icons.zenfipay-dark.svg",
         highlights: [
             {
                 id: 1,
@@ -38,7 +39,7 @@ export const projects = [
                 img: "",
             },
         ],
-        description: "Zenfipay is a fintech company focused on simplifying cross-border and local payments through stablecoin-powered financial infrastructure. The platform enables businesses and individuals to send, receive, and manage payments securely across different regions, leveraging blockchain technology to provide faster settlements, reduced transaction costs, and improved accessibility. By bridging traditional finance and digital assets, Zenfipay helps merchants streamline payment operations while offering reliable and efficient financial services in emerging and global markets.",
+        description: "Zenfipay is a fintech company focused on simplifying cross-border and local payments through stablecoin-powered financial infrastructure. The platform enables businesses and individuals to send, receive, and manage payments securely across different regions, leveraging blockchain technology to provide faster settlements, reduced transaction costs, and improved accessibility. ",
         liveWorks: [
             {
                 id: 1,
@@ -121,6 +122,20 @@ export const projects = [
                 name: "Suleiman David",
                 role: "CEO & Co-founder",
                 review: "He's such a pookie pie innit!"
+            },
+        ],
+        socials: [
+            {
+                id: 1,
+                name: "Twitter",
+                icon: "/icons/twitter-icon.svg",
+                link: "",
+            },
+            {
+                id: 3,
+                name: "LinkedIn",
+                icon: "/icons/linkedin-icon.svg",
+                link: "",
             },
         ]
     },
