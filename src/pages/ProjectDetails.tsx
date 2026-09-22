@@ -185,12 +185,12 @@ export default function ProjectDetails() {
 
                             {/* NAME AND ROLE */}
                             <div className=" flex gap-px items-baseline">
-                                <h5 className="text-[#111111] text-[17px]">{review.name}</h5>,
+                                <h5 className="text-[#111111] text-[18px]">{review.name}</h5>,
                                 <span className="text-[17px]">&nbsp;{review.role}.</span>
                             </div>
 
                             {/* REVIEW */}
-                            <p className="lg:text-[15px]">{review.review}</p>
+                            <p className="lg:text-[13px]">{review.review}</p>
                         </div>
                     ))}
                 </div>
