@@ -4,7 +4,7 @@ export default function IntroSection() {
     
     return (
 
-        <section className="h-dvh flex flex-col justify-evenly">
+        <section className="min-h-screen gap-20 justify-evenly">
 
             <div className="size-10 rounded-full bg-black" />
 
@@ -20,11 +20,11 @@ export default function IntroSection() {
 
             <button 
                 type="button"
-                className="w-fit flex gap-2.5 items-center animate-bounce transition-transform ease-linear"
+                className="w-fit flex gap-1 items-center"
                 onClick={() => {}}
             >
-                <span>Scroll down</span>
-                <Icon icon="ant-design:arrow-down-outlined" className="size-5 text-[#4a4a4a]" />
+                <span>Scroll</span>
+                <Icon icon="ant-design:arrow-down-outlined" className="size-4 text-[#4a4a4a] animate-bounce transition-transform ease-linear" />
             </button>
         </section>
     )

@@ -5,7 +5,7 @@ import HighlightSection from "../components/HighlightSection";
 
 export default function Home() {
     return (
-        <main className="flex flex-col gap-20">
+        <main>
             <IntroSection />
             <HighlightSection />
             {projects.map((project) => (

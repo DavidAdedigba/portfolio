@@ -12,7 +12,7 @@
   --heading: "Lora", sans-serif;
   --accent-t: "Six Caps", sans-serif;
 
-  font: 18px/100% var(--outfit);
+  font: 18px/145% var(--outfit);
   letter-spacing: 0.25px;
   color-scheme: light dark;
   color: var(--text);
@@ -43,10 +43,14 @@ html,body {
 section, .section {
   display: flex;
   flex-direction: column;
-  padding: 10px 12px;
+  padding: 40px 8px;
+
+  @media(min-width: 750px) {
+    padding: 40px 32px;
+  }
 
   @media ( min-width:1114px ) {
-    padding: 0 85px;
+    padding: 40px 128px
   }
 }
 .section {
@@ -59,32 +63,45 @@ h1,h2,h3,h4,h5 {
   font-family: var(--heading);
   font-weight: 600;
   font-style:italic;
+  line-height: 100%;
 }
-h1,h2 {
-  line-height: 44px;
+h1 {
   color: var(--text-h);
   font-size: 32px;
 
   @media(min-width: 750px) {
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 70px;
+  }
+  @media(min-width: 1114px) {
+    font-size: 85px;
+  }
+}
+h2 {
+  color: var(--text-h);
+  font-size: 32px;
+
+  @media(min-width: 750px) {
+    font-size: 44px;
   }
 }
 h3 {
   font-family: var(--accent-t);
   font-weight: 500;
   color: var(--text-h);
-  font-size:155px;
+  font-size:162px;
 
   @media (min-width: 750px) {
-    font-size: 100px;
+    font-size: 350px;
   }
   @media (min-width: 1114px) {
-    font-size: 222px;
+    font-size: 275px;
   }
 }
 h4 {
   line-height: normal;
+}
+h5 {
+  color: #111111;
 }
 a {
   font-family: "outfit", serif;
