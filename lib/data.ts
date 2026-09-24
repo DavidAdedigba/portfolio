@@ -3,6 +3,7 @@ export const projects = [
         id: 1,
         slug:"zenfipay",
         name: "Zenfipay",
+        role: "Frontend Engineer",
         logoLight: "/icons/zenfipay-light.svg",
         logoDark: "/icons.zenfipay-dark.svg",
         highlights: [
