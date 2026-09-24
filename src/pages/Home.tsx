@@ -1,20 +1,18 @@
-import { Link } from "react-router-dom";
-import { projects } from "../../lib/data";
+
 import IntroSection from "../components/IntroSection";
 import HighlightSection from "../components/HighlightSection";
+import AboutSection from "../components/AboutSection";
+import WorkSection from "../components/WorkSection";
+import ContactSection from "../components/ContactSection";
 
 export default function Home() {
     return (
         <main>
             <IntroSection />
             <HighlightSection />
-            {projects.map((project) => (
-                <div key={project.id}>
-                    <Link className="font-outfit text-outfit" to={`/projects/${project.slug}`}>
-                        <p>{project.name}</p>
-                    </Link>
-                </div>
-            ))}
+            <AboutSection />
+            <WorkSection />
+            <ContactSection />
         </main>
     )
 }
