@@ -10,12 +10,12 @@ export default function HighlightSection() {
             <div className="flex flex-col lg:flex-row border border-[#D8D0C0] rounded-lg">
 
                 {/* LEFT SIDE */}
-                <div className="lg:w-3/6 flex flex-col gap-4 p-4">
+                <div className="w-full lg:w-3/6 flex flex-col gap-4 lg:p-4">
 
-                    <h3 className="w-full text-center lg:text-left">marginalia</h3>
+                    <h3 className=" w-full text-center lg:text-left">marginalia</h3>
 
                     {/* MARGINALIA */}
-                    <div className="w-full flex flex-col md:flex-row md:flex-wrap md:justify-between gap-10 lg:gap-3 text-left">
+                    <div className=" w-fit flex flex-col md:flex-row md:flex-wrap md:justify-between gap-10 lg:gap-3 text-left px-1.5">
                         
                         <aside className="space-y-1.5 md:w-2/6">
                             <h5 className="lg:text-[16px]">The Machinery</h5>
@@ -24,11 +24,11 @@ export default function HighlightSection() {
                             </p>
                         </aside>
 
-                        <aside className="space-y-1.5 md:w-2/6">
+                        <aside className="space-y-1.5 md:w-3/6">
                             <h5 className="lg:text-[16px]">The Apprenticeship</h5>
-                            <ol className=" list-decimal lg:text-[12px] leading-normal">
-                                <li>ABAT ICT Center, Ministry Of Science and Technology</li>
-                                <li>HNG Internship</li>
+                            <ol className="lg:text-[12px] leading-normal">
+                                <li>1. ABAT ICT Center, Ministry Of Science and Technology</li>
+                                <li>2. HNG Internship</li>
                             </ol>
                         </aside>
 
@@ -39,7 +39,7 @@ export default function HighlightSection() {
                             </p>
                         </aside>
 
-                        <aside className="space-y-1.5 md:w-2/6">
+                        <aside className="space-y-1.5 md:w-3/6">
                             <h5 className="lg:text-[16px]">After Hours</h5>
                             <p className="lg:text-[12px]">
                                 Music, Gaming, Movies & TV Shows, Photography, Anime, Football, Tech gadgets... etc
@@ -53,9 +53,9 @@ export default function HighlightSection() {
                             </p>
                         </aside>
 
-                        <aside className="space-y-1.5 md:w-2/6">
+                        <aside className="space-y-1.5 md:w-3/6">
                             <h5 className="lg:text-[16px]">Byline</h5>
-                            <ol className=" list-decimal lg:text-[12px]">
+                            <ol className=" lg:text-[12px]">
                                 <li className="">
                                     <a href="" target="_blank">
                                         Search, seen differently.
