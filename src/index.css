@@ -43,14 +43,14 @@ html,body {
 section, .section {
   display: flex;
   flex-direction: column;
-  padding: 40px 8px;
+  padding: 128px 8px;
 
   @media(min-width: 750px) {
-    padding: 40px 32px;
+    padding: 128px 32px;
   }
 
   @media ( min-width:1114px ) {
-    padding: 40px 128px
+    padding: 128px 128px
   }
 }
 .section {
@@ -88,7 +88,7 @@ h3 {
   font-family: var(--accent-t);
   font-weight: 500;
   color: var(--text-h);
-  font-size:162px;
+  font-size:155px;
 
   @media (min-width: 750px) {
     font-size: 350px;
